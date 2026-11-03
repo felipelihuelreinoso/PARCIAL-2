@@ -1,0 +1,227 @@
+POKEMONS = [
+    (1, 'Bulbasaur', ['Planta', 'Veneno'], False, False),
+    (2, 'Ivysaur', ['Planta', 'Veneno'], False, False),
+    (3, 'Venusaur', ['Planta', 'Veneno'], True, True),
+    (4, 'Charmander', ['Fuego'], False, False),
+    (5, 'Charmeleon', ['Fuego'], False, False),
+    (6, 'Charizard', ['Fuego', 'Volador'], True, True),
+    (7, 'Squirtle', ['Agua'], False, False),
+    (8, 'Wartortle', ['Agua'], False, False),
+    (9, 'Blastoise', ['Agua'], True, True),
+    (10, 'Caterpie', ['Bicho'], False, False),
+    (11, 'Metapod', ['Bicho'], False, False),
+    (12, 'Butterfree', ['Bicho', 'Volador'], False, True),
+    (13, 'Weedle', ['Bicho', 'Veneno'], False, False),
+    (14, 'Kakuna', ['Bicho', 'Veneno'], False, False),
+    (15, 'Beedrill', ['Bicho', 'Veneno'], True, False),
+    (16, 'Pidgey', ['Normal', 'Volador'], False, False),
+    (17, 'Pidgeotto', ['Normal', 'Volador'], False, False),
+    (18, 'Pidgeot', ['Normal', 'Volador'], True, False),
+    (19, 'Rattata', ['Normal'], False, False),
+    (20, 'Raticate', ['Normal'], False, False),
+    (21, 'Spearow', ['Normal', 'Volador'], False, False),
+    (22, 'Fearow', ['Normal', 'Volador'], False, False),
+    (23, 'Ekans', ['Veneno'], False, False),
+    (24, 'Arbok', ['Veneno'], False, False),
+    (25, 'Pikachu', ['Eléctrico'], False, True),
+    (26, 'Raichu', ['Eléctrico'], False, False),
+    (27, 'Sandshrew', ['Tierra'], False, False),
+    (28, 'Sandslash', ['Tierra'], False, False),
+    (29, 'Nidoran-F', ['Veneno'], False, False),
+    (30, 'Nidorina', ['Veneno'], False, False),
+    (31, 'Nidoqueen', ['Veneno', 'Tierra'], False, False),
+    (32, 'Nidoran-M', ['Veneno'], False, False),
+    (33, 'Nidorino', ['Veneno'], False, False),
+    (34, 'Nidoking', ['Veneno', 'Tierra'], False, False),
+    (35, 'Clefairy', ['Hada'], False, False),
+    (36, 'Clefable', ['Hada'], False, False),
+    (37, 'Vulpix', ['Fuego'], False, False),
+    (38, 'Ninetales', ['Fuego'], False, False),
+    (39, 'Jigglypuff', ['Normal', 'Hada'], False, False),
+    (40, 'Wigglytuff', ['Normal', 'Hada'], False, False),
+    (41, 'Zubat', ['Veneno', 'Volador'], False, False),
+    (42, 'Golbat', ['Veneno', 'Volador'], False, False),
+    (43, 'Oddish', ['Planta', 'Veneno'], False, False),
+    (44, 'Gloom', ['Planta', 'Veneno'], False, False),
+    (45, 'Vileplume', ['Planta', 'Veneno'], False, False),
+    (46, 'Paras', ['Bicho', 'Planta'], False, False),
+    (47, 'Parasect', ['Bicho', 'Planta'], False, False),
+    (48, 'Venonat', ['Bicho', 'Veneno'], False, False),
+    (49, 'Venomoth', ['Bicho', 'Veneno'], False, False),
+    (50, 'Diglett', ['Tierra'], False, False),
+    (51, 'Dugtrio', ['Tierra'], False, False),
+    (52, 'Meowth', ['Normal'], False, True),
+    (53, 'Persian', ['Normal'], False, False),
+    (54, 'Psyduck', ['Agua'], False, False),
+    (55, 'Golduck', ['Agua'], False, False),
+    (56, 'Mankey', ['Lucha'], False, False),
+    (57, 'Primeape', ['Lucha'], False, False),
+    (58, 'Growlithe', ['Fuego'], False, False),
+    (59, 'Arcanine', ['Fuego'], False, False),
+    (60, 'Poliwag', ['Agua'], False, False),
+    (61, 'Poliwhirl', ['Agua'], False, False),
+    (62, 'Poliwrath', ['Agua', 'Lucha'], False, False),
+    (63, 'Abra', ['Psíquico'], False, False),
+    (64, 'Kadabra', ['Psíquico'], False, False),
+    (65, 'Alakazam', ['Psíquico'], True, False),
+    (66, 'Machop', ['Lucha'], False, False),
+    (67, 'Machoke', ['Lucha'], False, False),
+    (68, 'Machamp', ['Lucha'], False, True),
+    (69, 'Bellsprout', ['Planta', 'Veneno'], False, False),
+    (70, 'Weepinbell', ['Planta', 'Veneno'], False, False),
+    (71, 'Victreebel', ['Planta', 'Veneno'], False, False),
+    (72, 'Tentacool', ['Agua', 'Veneno'], False, False),
+    (73, 'Tentacruel', ['Agua', 'Veneno'], False, False),
+    (74, 'Geodude', ['Roca', 'Tierra'], False, False),
+    (75, 'Graveler', ['Roca', 'Tierra'], False, False),
+    (76, 'Golem', ['Roca', 'Tierra'], False, False),
+    (77, 'Ponyta', ['Fuego'], False, False),
+    (78, 'Rapidash', ['Fuego'], False, False),
+    (79, 'Slowpoke', ['Agua', 'Psíquico'], False, False),
+    (80, 'Slowbro', ['Agua', 'Psíquico'], True, False),
+    (81, 'Magnemite', ['Eléctrico', 'Acero'], False, False),
+    (82, 'Magneton', ['Eléctrico', 'Acero'], False, False),
+    (83, "Farfetch'd", ['Normal', 'Volador'], False, False),
+    (84, 'Doduo', ['Normal', 'Volador'], False, False),
+    (85, 'Dodrio', ['Normal', 'Volador'], False, False),
+    (86, 'Seel', ['Agua'], False, False),
+    (87, 'Dewgong', ['Agua', 'Hielo'], False, False),
+    (88, 'Grimer', ['Veneno'], False, False),
+    (89, 'Muk', ['Veneno'], False, False),
+    (90, 'Shellder', ['Agua'], False, False),
+    (91, 'Cloyster', ['Agua', 'Hielo'], False, False),
+    (92, 'Gastly', ['Fantasma', 'Veneno'], False, False),
+    (93, 'Haunter', ['Fantasma', 'Veneno'], False, False),
+    (94, 'Gengar', ['Fantasma', 'Veneno'], True, True),
+    (95, 'Onix', ['Roca', 'Tierra'], False, False),
+    (96, 'Drowzee', ['Psíquico'], False, False),
+    (97, 'Hypno', ['Psíquico'], False, False),
+    (98, 'Krabby', ['Agua'], False, False),
+    (99, 'Kingler', ['Agua'], False, True),
+    (100, 'Voltorb', ['Eléctrico'], False, False),
+    (101, 'Electrode', ['Eléctrico'], False, False),
+    (102, 'Exeggcute', ['Planta', 'Psíquico'], False, False),
+    (103, 'Exeggutor', ['Planta', 'Psíquico'], False, False),
+    (104, 'Cubone', ['Tierra'], False, False),
+    (105, 'Marowak', ['Tierra'], False, False),
+    (106, 'Hitmonlee', ['Lucha'], False, False),
+    (107, 'Hitmonchan', ['Lucha'], False, False),
+    (108, 'Lickitung', ['Normal'], False, False),
+    (109, 'Koffing', ['Veneno'], False, False),
+    (110, 'Weezing', ['Veneno'], False, False),
+    (111, 'Rhyhorn', ['Tierra', 'Roca'], False, False),
+    (112, 'Rhydon', ['Tierra', 'Roca'], False, False),
+    (113, 'Chansey', ['Normal'], False, False),
+    (114, 'Tangela', ['Planta'], False, False),
+    (115, 'Kangaskhan', ['Normal'], True, False),
+    (116, 'Horsea', ['Agua'], False, False),
+    (117, 'Seadra', ['Agua'], False, False),
+    (118, 'Goldeen', ['Agua'], False, False),
+    (119, 'Seaking', ['Agua'], False, False),
+    (120, 'Staryu', ['Agua'], False, False),
+    (121, 'Starmie', ['Agua', 'Psíquico'], False, False),
+    (122, 'Mr. Mime', ['Psíquico', 'Hada'], False, False),
+    (123, 'Scyther', ['Bicho', 'Volador'], False, False),
+    (124, 'Jynx', ['Hielo', 'Psíquico'], False, False),
+    (125, 'Electabuzz', ['Eléctrico'], False, False),
+    (126, 'Magmar', ['Fuego'], False, False),
+    (127, 'Pinsir', ['Bicho'], True, False),
+    (128, 'Tauros', ['Normal'], False, False),
+    (129, 'Magikarp', ['Agua'], False, False),
+    (130, 'Gyarados', ['Agua', 'Volador'], True, False),
+    (131, 'Lapras', ['Agua', 'Hielo'], False, True),
+    (132, 'Ditto', ['Normal'], False, False),
+    (133, 'Eevee', ['Normal'], False, True),
+    (134, 'Vaporeon', ['Agua'], False, False),
+    (135, 'Jolteon', ['Eléctrico'], False, False),
+    (136, 'Flareon', ['Fuego'], False, False),
+    (137, 'Porygon', ['Normal'], False, False),
+    (138, 'Omanyte', ['Roca', 'Agua'], False, False),
+    (139, 'Omastar', ['Roca', 'Agua'], False, False),
+    (140, 'Kabuto', ['Roca', 'Agua'], False, False),
+    (141, 'Kabutops', ['Roca', 'Agua'], False, False),
+    (142, 'Aerodactyl', ['Roca', 'Volador'], True, False),
+    (143, 'Snorlax', ['Normal'], False, True),
+    (144, 'Articuno', ['Hielo', 'Volador'], False, False),
+    (145, 'Zapdos', ['Eléctrico', 'Volador'], False, False),
+    (146, 'Moltres', ['Fuego', 'Volador'], False, False),
+    (147, 'Dratini', ['Dragón'], False, False),
+    (148, 'Dragonair', ['Dragón'], False, False),
+    (149, 'Dragonite', ['Dragón', 'Volador'], False, False),
+    (150, 'Mewtwo', ['Psíquico'], True, False),
+    (151, 'Mew', ['Psíquico'], False, False),
+    (208, 'Steelix', ['Acero', 'Tierra'], True, False),
+    (212, 'Scizor', ['Bicho', 'Acero'], True, False),
+    (282, 'Gardevoir', ['Psíquico', 'Hada'], True, False),
+    (306, 'Aggron', ['Acero', 'Roca'], True, False),
+    (376, 'Metagross', ['Acero', 'Psíquico'], True, False),
+    (445, 'Garchomp', ['Dragón', 'Tierra'], True, False),
+    (448, 'Lucario', ['Lucha', 'Acero'], True, False),
+    (462, 'Magnezone', ['Eléctrico', 'Acero'], False, False),
+    (477, 'Dusknoir', ['Fantasma'], False, False),
+    (609, 'Chandelure', ['Fuego', 'Fantasma'], False, False),
+    (697, 'Tyrantrum', ['Roca', 'Dragón'], False, False),
+    (745, 'Lycanroc', ['Roca'], False, False),
+    (823, 'Corviknight', ['Volador', 'Acero'], False, True),
+    (849, 'Toxtricity', ['Eléctrico', 'Veneno'], False, True),
+    (884, 'Duraludon', ['Acero', 'Dragón'], False, True),
+    (887, 'Dragapult', ['Dragón', 'Fantasma'], False, False),
+]
+
+
+import csv as _csv
+import io as _io
+from urllib.request import Request as _Request, urlopen as _urlopen
+
+_URL_POKEDEX_1025 = (
+    "https://raw.githubusercontent.com/cristobalmitchell/pokedex/main/"
+    "data/pokemon_utf8.csv"
+)
+_TIPOS_ES = {
+    "normal": "Normal", "fire": "Fuego", "water": "Agua",
+    "electric": "Eléctrico", "grass": "Planta", "ice": "Hielo",
+    "fighting": "Lucha", "poison": "Veneno", "ground": "Tierra",
+    "flying": "Volador", "psychic": "Psíquico", "bug": "Bicho",
+    "rock": "Roca", "ghost": "Fantasma", "dragon": "Dragón",
+    "dark": "Siniestro", "steel": "Acero", "fairy": "Hada",
+}
+
+def _cargar_pokedex_1025():
+    solicitud = _Request(
+        _URL_POKEDEX_1025,
+        headers={"User-Agent": "Python-Pokedex-Universitaria/1.0"}
+    )
+    try:
+        with _urlopen(solicitud, timeout=30) as respuesta:
+            contenido = respuesta.read().decode("utf-8")
+    except Exception as error:
+        raise RuntimeError(
+            "No se pudo descargar la Pokédex completa de 1025 Pokémon. "
+            "Verificá tu conexión a Internet e intentá nuevamente."
+        ) from error
+
+    registros = []
+    lector = _csv.DictReader(_io.StringIO(contenido))
+    for fila in lector:
+        tipos = [_TIPOS_ES[fila["primary_type"].strip().lower()]]
+        secundario = (fila.get("secondary_type") or "").strip().lower()
+        if secundario:
+            tipos.append(_TIPOS_ES[secundario])
+        mega = bool((fila.get("mega_evolution") or "").strip() or
+                    (fila.get("mega_evolution_alt") or "").strip())
+        gigamax = bool((fila.get("gigantamax") or "").strip())
+        registros.append((
+            int(fila["national_number"]),
+            fila["english_name"],
+            tipos,
+            mega,
+            gigamax,
+        ))
+
+    if len(registros) != 1025:
+        raise ValueError(
+            f"La fuente devolvió {len(registros)} Pokémon; se esperaban 1025."
+        )
+    return registros
+
+POKEMONS = _cargar_pokedex_1025()
